@@ -1,0 +1,372 @@
+:root {
+    --primary: #00766D;;
+    --secondary: #6DA7A1;
+    --light: #f8f8f8;
+    --danger: #C71914;
+    --warning: #F5CB41;
+    --shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    --shadow-card: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.listing img {
+    max-width: 300px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+p.register,
+p.login {
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.details-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  p.details-description,
+  p.details-bids {
+    font-size: 18px;
+  }
+
+  p.details-endsat,
+  p.card-text.endsat {
+    font-size: 16px;
+    color: var(--danger);
+  }
+
+  .details-text {
+    box-shadow: var(--shadow);
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+}
+
+p.bid-success{
+    font-weight: 600;
+    background: var(--secondary);
+    border: 1px solid;
+    padding: 10px 10px 10px 10px;
+    color: var(--light);
+    box-shadow: var(--shadow);
+    display: block;
+}
+
+p.card-text {
+    margin: 5px;
+}
+
+.profile-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card.profile-card {
+    max-height: 500px;
+}
+
+#avatar {
+    max-height: 280px;
+}
+
+@media (max-width: 700px) {
+    .profile-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+            margin-bottom: 50px;
+        }
+    }
+
+
+label.form-label {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.profile-info p {
+    margin: 0;
+}
+
+div#profile-bids {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+    align-items: start;
+    justify-items: center;
+}
+
+#load-more {
+    grid-column: 1 / -1; 
+  }
+
+button#load-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 150px;
+    height: 40px;
+}
+
+@media (max-width: 1020px) {
+    div#profile-bids {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    div#profile-bids {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+  
+.bidding-history {
+    box-shadow: var(--shadow);
+    margin: 20px;
+    padding: 20px;
+}
+
+nav {
+    box-shadow: var(--shadow);
+}
+
+img.logo {
+    max-width: 200px;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+}
+
+form#createListingForm {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#listings-container .card-text {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  #listings-container .card-text strong {
+    margin-right: 10px;
+  }
+
+  .endsAt {
+    color: var(--danger);
+  }
+
+  div#listings-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.userListings {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin: 20px;
+}
+
+
+
+@media (max-width: 920px) {
+    .userListings {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 620px) {
+    .userListings {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.details-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 40px;
+  }
+
+  .details-image img {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  body {
+    min-height: 100vh;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--primary);
+    position: sticky;
+    top: 100%;
+    height: 100px;
+}
+
+footer p {
+    color: var(--light);
+    text-align: center;
+    font-size: 15px;
+    position: sticky;
+    top: 100%;
+}
+
+img.footer-logo {
+    max-width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 20px;
+}
+
+.card {
+    width: 320px !important;
+    box-shadow: var(--shadow-card);
+    height: 650px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+img.card-img-top {
+    max-height: 400px;
+}
+
+form#loginForm,
+form#registerForm,
+form#createListingForm {
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: var(--shadow-card);
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+input#loginButton,
+input#registerButton {
+    width: 80px;
+    height: 30px;
+    background: var(--primary);
+    border: var(--primary);
+    color: var(--light);
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+form#update-listing-form {
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: var(--shadow);
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.align-items-start {
+    grid-gap: 20px;
+}
+
+a.btn.btn-outline-success {
+    border-color: var(--primary);
+    color: var(--primary);
+    margin-right: 10px;
+}
+
+a.btn.btn-outline-success:hover {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+a.btn.btn-primary,
+button.btn.btn-primary.my-3,
+button.btn.btn-primary {
+    background-color: var(--primary);
+    border: var(--primary);
+}
+
+#logoutButton {
+    margin-right: 10px;
+}
+
+button.btn.btn-secondary {
+    background-color: var(--secondary);
+    border: none;
+    margin: 15px 30px;
+}
+
+.confirmation-buttons::after {
+    background-color: var(--danger);
+    color: var(--light);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+
+  .confirmation-buttons.confirm {
+    background-color: var(--danger);
+    color: var(--light);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+
+  input#bid-amount {
+    max-height: 30px;
+    font-size: 18px;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+
+div#successMessage {
+    font-weight: 600;
+    background: var(--secondary);
+    border: 1px solid;
+    padding: 10px 10px 10px 10px;
+    color: var(--light);
+    box-shadow: var(--shadow);
+    margin-top: 10px;
+    display: none;
+}
+
+div#successMessage.success {
+    display: block;
+  }
+
+.bid-success {
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .confirmation-text.confirm {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+.confirmation-text::before {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }

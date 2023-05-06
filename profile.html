@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand"><img src="images/logo.png" class="logo" alt="Logo"></a>
+          <form class="d-flex" role="search">
+            <a class="btn btn-outline-success" href="login.html" role="button" id="loginButton">Login</a>
+            <a class="btn btn-primary" href="register.html" role="button" id="registerButton">Register</a>
+            <a class="btn btn-primary" href="#" role="button" id="logoutButton" style="display: none;">Logout</a>
+            <a class="btn btn-primary" href="profile.html" role="button" id="profileButton" style="display: none;">Profile</a>
+          </form>
+        </div>
+      </nav>
+      <a href="index.html"><button type="submit" class="btn btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16">
+        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+      </svg></button></a>
+      <div class="profile-cards">
+        <div class="card profile-card" style="width: 20rem;">
+          <img id="avatar" class="card-img-top" alt="Default avatar">
+          <div class="card-body">
+            <h5 class="card-title">Profile</h5>
+            <div class="profile-info">
+              <p>Username: <span id="username"></span></p>
+              <p>Email: <span id="email"></span></p>
+              <p>Your credit score: <span id="creditScore"></span></p>
+            </div>
+            <form>
+              <div class="mb-3">
+                <label for="avatarInput" class="form-label">Change avatar</label>
+                <input class="form-control" type="file" id="avatarInput">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="card profile-card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Listing</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Create your own listing!</h6>
+            <p class="card-text">Do you have something fashionable you want to sell? This is the perfect oportunity for you to place your own items up for sale. </p>
+            <a href="createListing.html" class="btn btn-primary">Create a listing</a>
+            <a href="usersListings.html" class="btn btn-primary">Your listings</a>
+          </div>
+        </div>
+      </div>
+      <div class="bidding-history">
+        <h1>Your bidding history:</h1>
+        <div id="profile-bids"></div>
+      </div>
+      <footer>
+        <img src="images/Logo transparant white.png" class="footer-logo">
+        <p>© Copyright Auctioneer 2023-2024</p>
+      </footer>
+      <script src="js/auth.js"></script>
+      <script src="js/profile.js"></script>
+    </body>
+</html>
