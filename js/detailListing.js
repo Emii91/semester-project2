@@ -24,12 +24,15 @@ fetchListing();
 
 
 function createHtml(details) {
+  const endsAtDate = new Date(details.endsAt);
+  const formattedEndsAtDate = endsAtDate.toLocaleDateString();
+
     detailListing.innerHTML = ` <div class="details-container">
                                 <div class="details-image"><img src="${details.media[0]}"></div>
                                 <div class="details-text">
                                 <h1 class="details-title">${details.title}<h1>
                                 <p class="details-description">${details.description}</p>
-                                <p class="details-endsat">Listing ends: ${details.endsAt}</p>
+                                <p class="details-endsat">Listing ends: ${formattedEndsAtDate}</p>
                                 <p class="details-bids" id="current-bid">Current highest bid: ${details._count.bids}</p>
                                     <input id="bid-amount" type="number" placeholder="Bid amount" />
                                     <button id="place-bid" class="btn btn-primary">Place bid</button>

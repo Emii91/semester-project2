@@ -18,6 +18,17 @@ h1 {
     font-size: 30px;
     width: 300px;
     margin: 0 auto;
+    font-family: "Fenix-Regular";
+}
+
+p {
+    font-family: "KantumruyPro-VariableFont";
+}
+
+button,
+.btn,
+#loginButton {
+    font-family: "Fenix-Regular";
 }
 
 p.register,
@@ -35,7 +46,7 @@ p.login {
   }
 
   p.details-description,
-  p.details-bids {
+  p.s-bids {
     font-size: 18px;
   }
 
@@ -45,11 +56,67 @@ p.login {
     color: var(--danger);
   }
 
+  p.card-text {
+    margin-bottom: 5px;
+  }
+
   .details-text {
     box-shadow: var(--shadow);
     height: 400px;
     width: 400px;
     padding: 20px;
+}
+
+@media (max-width: 480px) {
+    p.details-description, 
+    p.details-bids,
+    p.details-endsat, 
+    p.card-text.endsat {
+	    Text-align: start;
+    }
+	input#bid-amount {
+        margin: 0px !important;
+    }
+    button#place-bid {
+        position: relative;
+        right: 70px;
+        top: 10px;
+    }
+    p#current-bid {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 920px) {
+    .details-container {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .details-text {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .details-container {
+        margin: 0px;
+    }
+    .details-image img,
+    .details-text {
+        max-width: 200px !important;
+    }
+    .details-text {
+        margin-bottom: 10px;
+    }
+    .details-title {
+        font-size: 20px;
+        text-align: start;
+    }
+    h1 {
+        width: 100px;
+    }
+    button#place-bid {
+        right: 0;
+    }
 }
 
 p.bid-success{
@@ -62,10 +129,6 @@ p.bid-success{
     display: block;
 }
 
-p.card-text {
-    margin: 5px;
-}
-
 .profile-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -73,6 +136,8 @@ p.card-text {
 
 .card.profile-card {
     max-height: 500px;
+    width: 320px !important;
+    margin-bottom: 10px;
 }
 
 #avatar {
@@ -86,7 +151,10 @@ p.card-text {
     .card {
             margin-bottom: 50px;
         }
+    h1 {
+        font-size: 20px;
     }
+}
 
 
 label.form-label {
@@ -145,6 +213,19 @@ img.logo {
     max-width: 200px;
 }
 
+@media (max-width: 400px) {
+    .navbar>.container-fluid {
+        justify-content: center;
+        margin: 10px;
+    }
+    .d-flex {
+        margin-top: 10px;
+    }
+    .bidding-history {
+        margin: 0px;
+    }
+}
+
 label {
     display: block;
     font-weight: 500;
@@ -187,7 +268,11 @@ form#createListingForm {
     margin: 20px;
 }
 
-
+.warning {
+    background-color: var(--warning);
+    text-align: center;
+    padding: 10px 20px;
+}
 
 @media (max-width: 920px) {
     .userListings {
@@ -201,6 +286,15 @@ form#createListingForm {
     }
 }
 
+@media (max-width: 375px) {
+    .card {
+        max-width: 200px;
+    }
+    .card {
+        max-height: 550px;
+    }
+}
+
 .details-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -208,13 +302,13 @@ form#createListingForm {
     margin: 40px;
   }
 
-  .details-image img {
+.details-image img {
     display: flex;
     max-width: 400px;
     margin: 0 auto;
   }
 
-  body {
+body {
     min-height: 100vh;
 }
 
@@ -243,13 +337,25 @@ img.footer-logo {
     padding: 20px;
 }
 
+.indexText {
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .card {
-    width: 320px !important;
+    /* width: 320px !important; */
     box-shadow: var(--shadow-card);
     height: 650px;
     width: 250px;
     margin: 0 auto;
 }
+
+.mt-5 {
+    margin-top: 0px !important;
+}
+
 
 img.card-img-top {
     max-height: 400px;
@@ -284,6 +390,10 @@ form#update-listing-form {
     margin-top: 40px;
 }
 
+
+
+
+
 .align-items-start {
     grid-gap: 20px;
 }
@@ -306,11 +416,18 @@ button.btn.btn-primary {
     border: var(--primary);
 }
 
+a.btn.btn-primary:hover,
+button.btn.btn-primary.my-3:hover,
+button.btn.btn-primary:hover {
+    background-color: var(--secondary);
+}
+
 #logoutButton {
     margin-right: 10px;
 }
 
-button.btn.btn-secondary {
+button.btn.btn-secondary,
+button.btn.btn-secondary:hover {
     background-color: var(--secondary);
     border: none;
     margin: 15px 30px;
@@ -342,6 +459,8 @@ input::placeholder {
 }
 
 
+
+
 div#successMessage {
     font-weight: 600;
     background: var(--secondary);
@@ -370,3 +489,13 @@ div#successMessage.success {
     font-family: Arial, sans-serif;
     font-size: 16px;
   }
+
+  .error-message {
+    border: 1px solid;
+    padding: 20px;
+    color: #C71914;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  
+

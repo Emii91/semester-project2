@@ -67,8 +67,9 @@ function displayListings() {
     item.innerHTML = ` 
                     <div class="card h-100">
                         <div class="card-body">
-                        <p class="card-text">${listing.bidderName}</p>
-                        <p class="card-text">Last bid placed: ${listing.created}</p>
+                        <p class="card-text"><strong>Username: </strong>${listing.bidderName}</p>
+                        <p class="card-text"><strong>Last bid placed: </strong>${listing.created}</p>
+                        <p class="card-text"><strong>Bid amount: </strong>${listing.amount}</p>
                         </div>
                     </div>`;  
     return item;
