@@ -129,6 +129,7 @@ button.btn.btn-primary.my-3,
 button.btn.btn-primary {
     background-color: var(--primary);
     border: var(--primary);
+    margin-right: 20px;
 }
 
 a.btn.btn-primary:hover,
