@@ -98,9 +98,8 @@ button,
 }
 
 .card {
-    /* width: 320px !important; */
     box-shadow: var(--shadow-card);
-    height: 650px;
+    height: 680px;
     width: 250px;
     margin: 0 auto;
 }
