@@ -55,3 +55,9 @@ form#update-listing-form {
 #errorMessage {
     color: var(--danger);
 }
+
+.usernameHelp,
+.emailHelp {
+    font-size: 10px;
+    font-weight: 500;
+}
