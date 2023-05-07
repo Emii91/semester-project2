@@ -23,6 +23,9 @@ It's an online marketplace specifically created for buying and selling fashion i
 * Adobe XD
 * Trello
 
+## Hosting
+* Netlify
+
 # User Stories
 The client has specified the following requirements in the form of User Stories:
 
@@ -38,3 +41,6 @@ The client has specified the following requirements in the form of User Stories:
 
 ## Run the project
 This project uses Bootstrap, so it should be fine to run locally.
+Bootstrap: "^5.3.0-alpha3"
+
+* npm install bootstrap@5.3.0-alpha3
