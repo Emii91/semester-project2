@@ -1,0 +1,57 @@
+/* Form */
+p.register,
+p.login {
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+label.form-label {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+}
+
+input#loginButton,
+input#registerButton {
+    width: 80px;
+    height: 30px;
+    background: var(--primary);
+    border: var(--primary);
+    color: var(--light);
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+form#loginForm,
+form#registerForm,
+form#createListingForm {
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: var(--shadow-card);
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+form#update-listing-form {
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: var(--shadow);
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#errorMessage {
+    color: var(--danger);
+}

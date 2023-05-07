@@ -1,0 +1,131 @@
+.details-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  p.details-description,
+  p.s-bids {
+    font-size: 18px;
+  }
+
+  p.details-endsat,
+  p.card-text.endsat {
+    font-size: 16px;
+    color: var(--danger);
+  }
+
+  p.card-text {
+    margin-bottom: 5px;
+  }
+
+  .details-text {
+    box-shadow: var(--shadow);
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+}
+
+.details-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 40px;
+  }
+
+.details-image img {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  p.bid-success {
+    font-weight: 600;
+    background: var(--secondary);
+    border: 1px solid;
+    padding: 10px 10px 10px 10px;
+    color: var(--light);
+    box-shadow: var(--shadow);
+    display: block;
+}
+
+div#successMessage {
+    font-weight: 600;
+    background: var(--secondary);
+    border: 1px solid;
+    padding: 10px 10px 10px 10px;
+    color: var(--light);
+    box-shadow: var(--shadow);
+    margin-top: 10px;
+    display: none;
+}
+
+div#successMessage.success {
+    display: block;
+}
+
+.bid-success {
+    transition: opacity 0.5s ease-in-out;
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+input#bid-amount {
+    max-height: 30px;
+    font-size: 18px;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+    p.details-description, 
+    p.details-bids,
+    p.details-endsat, 
+    p.card-text.endsat {
+	    Text-align: start;
+    }
+	input#bid-amount {
+        margin: 0px !important;
+    }
+    button#place-bid {
+        position: relative;
+        right: 70px;
+        top: 10px;
+    }
+    p#current-bid {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 920px) {
+    .details-container {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .details-text {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .details-container {
+        margin: 0px;
+    }
+    .details-image img,
+    .details-text {
+        max-width: 200px !important;
+    }
+    .details-text {
+        margin-bottom: 10px;
+    }
+    .details-title {
+        font-size: 20px;
+        text-align: start;
+    }
+    h1 {
+        width: 100px;
+    }
+    button#place-bid {
+        right: 0;
+    }
+}

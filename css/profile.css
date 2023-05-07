@@ -1,0 +1,70 @@
+/* Profile */
+.profile-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card.profile-card {
+    max-height: 500px;
+    width: 320px !important;
+    margin-bottom: 10px;
+}
+
+#avatar {
+    max-height: 280px;
+}
+
+@media (max-width: 700px) {
+    .profile-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+            margin-bottom: 50px;
+        }
+    h1 {
+        font-size: 20px;
+    }
+}
+
+.profile-info p {
+    margin: 0;
+}
+
+div#profile-bids {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+    align-items: start;
+    justify-items: center;
+}
+
+#load-more {
+    grid-column: 1 / -1; 
+  }
+
+button#load-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 150px;
+    height: 40px;
+}
+
+@media (max-width: 1020px) {
+    div#profile-bids {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    div#profile-bids {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+  
+.bidding-history {
+    box-shadow: var(--shadow);
+    margin: 20px;
+    padding: 20px;
+}

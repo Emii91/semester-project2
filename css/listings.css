@@ -1,0 +1,37 @@
+.listing img {
+    max-width: 300px;
+}
+
+form#createListingForm {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#listings-container .card-text {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  #listings-container .card-text strong {
+    margin-right: 10px;
+  }
+
+  .endsAt {
+    color: var(--danger);
+  }
+
+  div#listings-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.warning {
+    background-color: var(--warning);
+    text-align: center;
+    padding: 10px 20px;
+}
+
+
+

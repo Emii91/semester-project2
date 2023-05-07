@@ -133,5 +133,10 @@ async function createBid(amount, token, user) {
       if (error instanceof TypeError) {
         console.error("Response is not valid JSON:", error);
       }
+      
+      const bidErrorMsg = document.createElement("p");
+      bidErrorMsg.textContent = "Failed to place bid: " + error.message;
+      bidErrorMsg.classList.add("bid-error");
+      document.querySelector(".details-text").appendChild(bidErrorMsg);
     }
-  }
+}

@@ -8,201 +8,8 @@
     --shadow-card: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-
-.listing img {
-    max-width: 300px;
-}
-
-h1 {
-    text-align: center;
-    font-size: 30px;
-    width: 300px;
-    margin: 0 auto;
-    font-family: "Fenix-Regular";
-}
-
-p {
-    font-family: "KantumruyPro-VariableFont";
-}
-
-button,
-.btn,
-#loginButton {
-    font-family: "Fenix-Regular";
-}
-
-p.register,
-p.login {
-    width: 600px;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    padding: 20px;
-}
-
-.details-title {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-
-  p.details-description,
-  p.s-bids {
-    font-size: 18px;
-  }
-
-  p.details-endsat,
-  p.card-text.endsat {
-    font-size: 16px;
-    color: var(--danger);
-  }
-
-  p.card-text {
-    margin-bottom: 5px;
-  }
-
-  .details-text {
-    box-shadow: var(--shadow);
-    height: 400px;
-    width: 400px;
-    padding: 20px;
-}
-
-@media (max-width: 480px) {
-    p.details-description, 
-    p.details-bids,
-    p.details-endsat, 
-    p.card-text.endsat {
-	    Text-align: start;
-    }
-	input#bid-amount {
-        margin: 0px !important;
-    }
-    button#place-bid {
-        position: relative;
-        right: 70px;
-        top: 10px;
-    }
-    p#current-bid {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 920px) {
-    .details-container {
-        grid-template-columns: repeat(1, 1fr) !important;
-    }
-    .details-text {
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 480px) {
-    .details-container {
-        margin: 0px;
-    }
-    .details-image img,
-    .details-text {
-        max-width: 200px !important;
-    }
-    .details-text {
-        margin-bottom: 10px;
-    }
-    .details-title {
-        font-size: 20px;
-        text-align: start;
-    }
-    h1 {
-        width: 100px;
-    }
-    button#place-bid {
-        right: 0;
-    }
-}
-
-p.bid-success{
-    font-weight: 600;
-    background: var(--secondary);
-    border: 1px solid;
-    padding: 10px 10px 10px 10px;
-    color: var(--light);
-    box-shadow: var(--shadow);
-    display: block;
-}
-
-.profile-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.card.profile-card {
-    max-height: 500px;
-    width: 320px !important;
-    margin-bottom: 10px;
-}
-
-#avatar {
-    max-height: 280px;
-}
-
-@media (max-width: 700px) {
-    .profile-cards {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .card {
-            margin-bottom: 50px;
-        }
-    h1 {
-        font-size: 20px;
-    }
-}
-
-
-label.form-label {
-    font-weight: 600;
-    margin-top: 10px;
-}
-
-.profile-info p {
-    margin: 0;
-}
-
-div#profile-bids {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 20px;
-    align-items: start;
-    justify-items: center;
-}
-
-#load-more {
-    grid-column: 1 / -1; 
-  }
-
-button#load-more {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    width: 150px;
-    height: 40px;
-}
-
-@media (max-width: 1020px) {
-    div#profile-bids {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 700px) {
-    div#profile-bids {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-  
-.bidding-history {
-    box-shadow: var(--shadow);
-    margin: 20px;
-    padding: 20px;
+body {
+    min-height: 100vh;
 }
 
 nav {
@@ -213,103 +20,8 @@ img.logo {
     max-width: 200px;
 }
 
-@media (max-width: 400px) {
-    .navbar>.container-fluid {
-        justify-content: center;
-        margin: 10px;
-    }
-    .d-flex {
-        margin-top: 10px;
-    }
-    .bidding-history {
-        margin: 0px;
-    }
-}
-
-label {
-    display: block;
-    font-weight: 500;
-}
-
-input, textarea {
-    display: block;
-    width: 100%;
-}
-
-form#createListingForm {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-#listings-container .card-text {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  #listings-container .card-text strong {
-    margin-right: 10px;
-  }
-
-  .endsAt {
-    color: var(--danger);
-  }
-
-  div#listings-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.userListings {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-    margin: 20px;
-}
-
-.warning {
-    background-color: var(--warning);
-    text-align: center;
-    padding: 10px 20px;
-}
-
-@media (max-width: 920px) {
-    .userListings {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 620px) {
-    .userListings {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media (max-width: 375px) {
-    .card {
-        max-width: 200px;
-    }
-    .card {
-        max-height: 550px;
-    }
-}
-
-.details-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    margin: 40px;
-  }
-
-.details-image img {
-    display: flex;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
-body {
-    min-height: 100vh;
+img.card-img-top {
+    max-height: 400px;
 }
 
 footer {
@@ -337,8 +49,49 @@ img.footer-logo {
     padding: 20px;
 }
 
+h1 {
+    text-align: center;
+    font-size: 30px;
+    width: 300px;
+    margin: 0 auto;
+    font-family: "Fenix-Regular";
+}
+
+p {
+    font-family: "KantumruyPro-VariableFont";
+}
+
+button,
+.btn,
+#loginButton {
+    font-family: "Fenix-Regular";
+}
+
+
+
+@media (max-width: 400px) {
+    .navbar>.container-fluid {
+        justify-content: center;
+        margin: 10px;
+    }
+    .d-flex {
+        margin-top: 10px;
+    }
+    .bidding-history {
+        margin: 0px;
+    }
+}
+
+@media (max-width: 375px) {
+    .card {
+        max-width: 200px;
+        max-height: 550px;
+    }
+}
+
 .indexText {
-    padding: 20px;
+    font-size: 20px;
+    padding: 25px;
     max-width: 600px;
     text-align: center;
     margin: 0 auto;
@@ -355,44 +108,6 @@ img.footer-logo {
 .mt-5 {
     margin-top: 0px !important;
 }
-
-
-img.card-img-top {
-    max-height: 400px;
-}
-
-form#loginForm,
-form#registerForm,
-form#createListingForm {
-    max-width: 500px;
-    margin: 0 auto;
-    box-shadow: var(--shadow-card);
-    padding: 20px;
-    margin-bottom: 40px;
-}
-
-input#loginButton,
-input#registerButton {
-    width: 80px;
-    height: 30px;
-    background: var(--primary);
-    border: var(--primary);
-    color: var(--light);
-    border-radius: 3px;
-    margin-top: 10px;
-}
-
-form#update-listing-form {
-    max-width: 400px;
-    margin: 0 auto;
-    box-shadow: var(--shadow);
-    padding: 20px;
-    margin-top: 40px;
-}
-
-
-
-
 
 .align-items-start {
     grid-gap: 20px;
@@ -438,64 +153,31 @@ button.btn.btn-secondary:hover {
     color: var(--light);
     font-family: Arial, sans-serif;
     font-size: 16px;
-  }
+}
 
-  .confirmation-buttons.confirm {
+.confirmation-buttons.confirm {
     background-color: var(--danger);
     color: var(--light);
     font-family: Arial, sans-serif;
     font-size: 16px;
-  }
-
-  input#bid-amount {
-    max-height: 30px;
-    font-size: 18px;
-    max-width: 150px;
-    margin: 0 auto;
 }
 
-input::placeholder {
-    font-size: 16px;
-}
-
-
-
-
-div#successMessage {
-    font-weight: 600;
-    background: var(--secondary);
-    border: 1px solid;
-    padding: 10px 10px 10px 10px;
-    color: var(--light);
-    box-shadow: var(--shadow);
-    margin-top: 10px;
-    display: none;
-}
-
-div#successMessage.success {
-    display: block;
-  }
-
-.bid-success {
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .confirmation-text.confirm {
+.confirmation-text.confirm {
     font-family: Arial, sans-serif;
     font-size: 16px;
-  }
+}
   
 .confirmation-text::before {
     font-family: Arial, sans-serif;
     font-size: 16px;
-  }
+}
 
-  .error-message {
+.error-message,
+.bid-error {
     border: 1px solid;
     padding: 20px;
     color: #C71914;
     font-size: 1.2em;
     text-align: center;
-  }
+}
   
-

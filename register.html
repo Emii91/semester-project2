@@ -7,6 +7,7 @@
     <title>Register</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
 </head>
 <body>
     <nav class="navbar bg-body-tertiary">
@@ -19,7 +20,7 @@
           </form>
         </div>
       </nav>
-      <a href="usersListings.html"><button type="submit" class="btn btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16">
+      <a href="index.html"><button type="submit" class="btn btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16">
         <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
       </svg></button></a>
       <h1>Register</h1>
@@ -29,16 +30,16 @@
       <form id="registerForm">
         <div class="mb-3">
             <label for="username" class="form-label">Username</label>
-            <input type="text" class="form-control" id="username" placeholder="User_name">
+            <input type="text" class="form-control" id="username" placeholder="Username" required>
             <div class="form-error" id="usernameError">Your username must be at least 4 characters</div>
           </div>
         <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email" placeholder="firstname.lastname@stud.noroff.no">
+            <input type="email" class="form-control" id="email" placeholder="firstname.lastname@stud.noroff.no" required>
             <div class="form-error" id="emailError">Your email must end with "@stud.noroff.no"</div>
           </div>
           <label for="password" class="form-label">Password</label>
-            <input type="password" id="password" class="form-control" aria-labelledby="passwordHelpBlock">
+            <input type="password" id="password" class="form-control" aria-labelledby="passwordHelpBlock" required>
             <div id="passwordHelpBlock" class="form-text">
             Your password must be 8-20 characters long, and must not contain spaces, special characters, or emoji.
           </div>

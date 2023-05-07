@@ -68,7 +68,7 @@ function displayListings() {
                     <div class="card h-100">
                         <div class="card-body">
                         <p class="card-text"><strong>Username: </strong>${listing.bidderName}</p>
-                        <p class="card-text"><strong>Last bid placed: </strong>${listing.created}</p>
+                        <p class="card-text"><strong>Last placed bid: </strong>${listing.created}</p>
                         <p class="card-text"><strong>Bid amount: </strong>${listing.amount}</p>
                         </div>
                     </div>`;  
