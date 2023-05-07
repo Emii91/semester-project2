@@ -52,7 +52,7 @@ Bootstrap: "^5.3.0-alpha3"
 ## Required links
 Gantt: <img width="1228" alt="Skjermbilde 2023-05-07 kl  23 11 23" src="https://user-images.githubusercontent.com/69647535/236702762-5dc874ab-19a8-4473-afab-1012c3745116.png">
 
-Kanban: https://trello.com/invite/b/IplYSqKb/ATTI339887e69b4bf7f511cb4b03e706b006B34B631B/semester-project-2![image](https://user-images.githubusercontent.com/69647535/236701364-a7a6ccdf-f6a6-4e9a-a222-e483601e005e.png)
-Prototype: https://xd.adobe.com/view/6ca9387c-2be7-4596-bfb2-89e811b7b55f-39fa/
-Styleguide: https://xd.adobe.com/view/23381ce5-5a5a-406c-b9a5-3e8c410948a1-766b/
-Repository link: https://github.com/Emii91/semester-project2.git
+* Kanban: https://trello.com/invite/b/IplYSqKb/ATTI339887e69b4bf7f511cb4b03e706b006B34B631B/semester-project-2![image](https://user-images.githubusercontent.com/69647535/236701364-a7a6ccdf-f6a6-4e9a-a222-e483601e005e.png)
+* Prototype: https://xd.adobe.com/view/6ca9387c-2be7-4596-bfb2-89e811b7b55f-39fa/
+* Styleguide: https://xd.adobe.com/view/23381ce5-5a5a-406c-b9a5-3e8c410948a1-766b/
+* Repository link: https://github.com/Emii91/semester-project2.git
