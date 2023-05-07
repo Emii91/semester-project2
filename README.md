@@ -56,3 +56,4 @@ Gantt: <img width="1228" alt="Skjermbilde 2023-05-07 kl  23 11 23" src="https://
 * Prototype: https://xd.adobe.com/view/6ca9387c-2be7-4596-bfb2-89e811b7b55f-39fa/
 * Styleguide: https://xd.adobe.com/view/23381ce5-5a5a-406c-b9a5-3e8c410948a1-766b/
 * Repository link: https://github.com/Emii91/semester-project2.git
+* Live site: auctioneer-sp-2.netlify.app
