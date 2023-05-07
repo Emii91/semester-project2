@@ -44,3 +44,7 @@ This project uses Bootstrap, so it should be fine to run locally.
 Bootstrap: "^5.3.0-alpha3"
 
 * npm install bootstrap@5.3.0-alpha3
+
+## Using the project
+* Register with a "@stud.noroff.no" email
+* Login with username and password
