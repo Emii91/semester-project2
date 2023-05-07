@@ -61,3 +61,10 @@ form#update-listing-form {
     font-size: 10px;
     font-weight: 500;
 }
+
+@media (max-width: 625px) {
+    p.register,
+    p.login {
+        width: 300px;
+    }
+}
