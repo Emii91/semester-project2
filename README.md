@@ -54,3 +54,6 @@ npm run start
 * Login with username and password
 
 
+# Contact
+
+:link: [LinkedIn](https://www.linkedin.com/in/emily-cooke-frantzen-89a2691b6)
