@@ -1,4 +1,4 @@
-# Semester-Project2
+# Semester-Project 2
 Auctioneer
 
 <img width="783" alt="Skjermbilde 2023-05-07 kl  21 08 11" src="https://user-images.githubusercontent.com/69647535/236697736-f9fba385-136e-4f0d-be1b-4cebad64e78d.png">
